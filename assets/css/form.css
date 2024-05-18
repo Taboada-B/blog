@@ -7,14 +7,54 @@
     --orange-dark: #9f561a;
     --borders: solid black;
     /* dark mode */
+    
     --grey-1: #3e3e42;
     --grey-2: #2d2d30;
-    --grey-3: #252526;
+    --grey-3: #808080;
+}
+/* light mode */
+body {
+    background-color: var(--orange-med);
+    color: black;
 }
 
+.light header {
+    background-color: var(--orange-light);
+}
+
+.light .submission {
+    background-color: var(--blue-light);
+}
+.light .aside {
+    background-color: var(--blue-dark);
+}
+.footer {
+    background-color: var(--orange-light);
+}
+
+/* light mode end */
+/* dark mode */
+/* body{
+    background-color: var(--grey-1);
+    color: whitesmoke; 
+}
+
+.header {
+    background-color: var(--grey-2);
+}
+
+.submission {
+    background-color: var(--grey-1);
+}
+.aside {
+    background-color: var(--grey-1);
+}
+.footer {
+    background-color: var(--grey-3);
+} */
+
+/* dark mode end */
 body {
-    color: black;
-    background-color: var(--orange-med);
     line-height: 20px;
 }
 
@@ -22,7 +62,6 @@ body {
     height: auto;
     padding: 20px;
     margin: 0 0 5px 0;
-    background-color: var(--orange-light);
     border-bottom: var(--borders);
     text-align: end;
 }
@@ -46,14 +85,12 @@ main {
 
 .submission {
     flex-direction: column;
-    background-color: var(--blue-light);
     border-left: var(--borders);
     margin-left: 5px;
 
 }
 
 .aside {
-    background-color: var(--blue-dark);
     max-width: 40%;
     padding: 40px;
     border-right: var(--borders);
@@ -61,12 +98,11 @@ main {
 }
 
 img{
-    filter: drop-shadow( -10px 15px 10px);
+    filter: drop-shadow( -10px 15px 10px black);
 }
 
 .footer {
     margin-top: 5px;
-    background-color: var(--orange-light);
     width: 100%;
     text-align: center;
     border-top: var(--borders);
