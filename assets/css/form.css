@@ -35,12 +35,12 @@ main {
     flex-direction: row;
     justify-content: center;
     border-top: var(--borders);
+    border-bottom: var(--borders);
 }
 
 .submission {
     flex-direction: column;
     background-color: var(--blue-light);
-    border-bottom: var(--borders);
     border-left: var(--borders);
     margin-left: 5px;
 
@@ -51,14 +51,16 @@ main {
     max-width: 40%;
     padding: 40px;
     border-right: var(--borders);
-    border-bottom: var(--borders);
     text-align: center;
 }
 
 .footer {
+    margin-top: 5px;
     background-color: var(--orange-light);
     width: 100%;
     text-align: center;
+    border-top: var(--borders);
+    
 
 }
 
