@@ -1,37 +1,69 @@
-body{
-    background-color: azure;
+:root {
+    --blue-light: #56c1d8;
+    --blue-dark: #4e93b4;
+    --orange-light: #f9a159;
+    --orange-med: #cc7025;
+    --orange-dark: #9f561a;
+    --borders: solid black; 
 }
+
+body {
+    background-color: var(--orange-med);
+    line-height: 20px;
+}
+
 .header {
     height: auto;
-   padding: 0;
-margin: 0 0 5px 0;
-    background-color: antiquewhite;
-    border-bottom: solid black;
+    padding: 20px;
+    margin: 0 0 5px 0;
+    background-color: var(--orange-light);
+    border-bottom: var(--borders);
     text-align: end;
 }
+
+.header h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
 
 main {
     flex-direction: row;
     justify-content: center;
-    border-top: solid black;
+    border-top: var(--borders);
 }
 
 .submission {
     flex-direction: column;
-    
+    background-color: var(--blue-light);
+    border-bottom: var(--borders);
+    border-left: var(--borders);
+
 }
 
-
-
 .aside {
+    background-color: var(--blue-dark);
     max-width: 40%;
     padding: 10px;
-    border-right: solid black;
-    border-bottom: solid black;
+    border-right: var(--borders);
+    border-bottom: var(--borders);
     text-align: center;
 }
 
+@media screen and (max-width: 1000px) {
+    main {
+        flex-direction: column;
+    }
 
-
-
-
+    .aside {
+        max-width: 90%;
+        margin: 5%;
+        border: var(--borders)
+    }
+    .submission {
+        border: var(--borders);
+        max-width: 90%;
+        margin:0 5%;
+    }
+}
