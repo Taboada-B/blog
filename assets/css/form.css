@@ -7,10 +7,13 @@
     --orange-dark: #9f561a;
     --borders: solid black;
     /* dark mode */
-    --grey-light: grey;
+    --grey-1: #3e3e42;
+    --grey-2: #2d2d30;
+    --grey-3: #252526;
 }
 
 body {
+    color: black;
     background-color: var(--orange-med);
     line-height: 20px;
 }
