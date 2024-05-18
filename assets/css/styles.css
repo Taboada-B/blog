@@ -1,0 +1,14 @@
+*{
+width: 100%; 
+font-size: 16px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;  
+font-weight: 400;
+}
+
+header {
+    text-align: right;
+}
+
+main {
+    display:flex
+    }
