@@ -26,6 +26,10 @@ body {
     border-bottom: var(--borders);
     text-align: end;
 }
+a:hover {
+text-decoration: underline;
+font-weight: 900;
+}
 
 .header h1 {
     text-align: center;
