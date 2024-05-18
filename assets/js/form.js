@@ -3,17 +3,17 @@ const themeSwitcher = document.querySelector('#theme-switcher')
 const submission = document.querySelector('.submission');
 
 
-let mode ='light';
-themeSwitcher.addEventListener('click', function(){
-    if (mode === 'light'){
-        mode = 'dark';
-        container.setAttribute('class', 'dark');
-    }
-    else {
-        mode = 'light';
-        container.setAttribute('class', 'light')
-    }
-});
+// let mode ='light';
+// themeSwitcher.addEventListener('click', function(){
+//     if (mode === 'light'){
+//         mode = 'dark';
+//         container.setAttribute('class', 'dark');
+//     }
+//     else {
+//         mode = 'light';
+//         container.setAttribute('class', 'light')
+//     }
+// });
 
     // themeSwitcher.addEventListener('click', function () {
     //     // If mode is dark, apply light background

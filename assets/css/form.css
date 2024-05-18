@@ -34,24 +34,24 @@ body {
 
 /* light mode end */
 /* dark mode */
-/* body{
+body{
     background-color: var(--grey-1);
     color: whitesmoke; 
 }
 
-.header {
+.dark header {
     background-color: var(--grey-2);
 }
 
-.submission {
+.dark .submission {
     background-color: var(--grey-1);
 }
-.aside {
+.dark .aside {
     background-color: var(--grey-1);
 }
-.footer {
+.dark .footer {
     background-color: var(--grey-3);
-} */
+}
 
 /* dark mode end */
 body {
