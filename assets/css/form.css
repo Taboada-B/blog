@@ -57,6 +57,10 @@ main {
     text-align: center;
 }
 
+img{
+    filter: drop-shadow( -10px 15px 10px);
+}
+
 .footer {
     margin-top: 5px;
     background-color: var(--orange-light);
