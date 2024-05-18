@@ -1,10 +1,13 @@
 :root {
+    /* light mode */
     --blue-light: #56c1d8;
     --blue-dark: #4e93b4;
     --orange-light: #f9a159;
     --orange-med: #cc7025;
     --orange-dark: #9f561a;
-    --borders: solid black; 
+    --borders: solid black;
+    /* dark mode */
+    --grey-light: grey;
 }
 
 body {
@@ -39,16 +42,24 @@ main {
     background-color: var(--blue-light);
     border-bottom: var(--borders);
     border-left: var(--borders);
+    margin-left: 5px;
 
 }
 
 .aside {
     background-color: var(--blue-dark);
     max-width: 40%;
-    padding: 10px;
+    padding: 40px;
     border-right: var(--borders);
     border-bottom: var(--borders);
     text-align: center;
+}
+
+.footer {
+    background-color: var(--orange-light);
+    width: 100%;
+    text-align: center;
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -61,9 +72,11 @@ main {
         margin: 5%;
         border: var(--borders)
     }
+
     .submission {
         border: var(--borders);
         max-width: 90%;
-        margin:0 5%;
+        margin: 0 5%;
+        background-color: var(--blue-dark);
     }
 }
