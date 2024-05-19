@@ -1,0 +1,60 @@
+* {
+    color:black;
+}
+
+#theme-switcher {
+    text-align: right;
+    max-width: fit-content;
+    background-color: var(--orange-med);
+}
+/* light mode */
+body {
+    background-color: var(--orange-med);
+    color: black;
+}
+
+.light header {
+    background-color: var(--orange-light);
+    color: black;
+}
+
+.light .submission {
+    background-color: var(--blue-light);
+    color: black;
+}
+
+.light .aside {
+    background-color: var(--blue-dark);
+    color: black;
+}
+
+.footer {
+    background-color: var(--orange-light);
+    color: black;
+}
+
+/* light mode end */
+
+/* dark mode */
+body {
+    background-color: var(--grey-1);
+    color: whitesmoke;
+}
+
+.dark header {
+    background-color: var(--grey-2);
+}
+
+.dark .submission {
+    background-color: var(--grey-1);
+}
+
+.dark .aside {
+    background-color: var(--grey-1);
+}
+
+.dark .footer {
+    background-color: var(--grey-3);
+}
+
+/* dark mode end */

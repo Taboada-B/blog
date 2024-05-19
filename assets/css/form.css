@@ -7,12 +7,12 @@
     --orange-dark: #9f561a;
     --borders: solid black;
     /* dark mode */
-
     --grey-1: #3e3e42;
     --grey-2: #2d2d30;
     --grey-3: #808080;
 }
 
+/* switching tag for java */
 #theme-switcher {
     text-align: right;
     max-width: fit-content;
@@ -20,31 +20,35 @@
 }
 
 /* light mode */
-body {
+body .light {
     background-color: var(--orange-med);
     color: black;
 }
 
 .light header {
     background-color: var(--orange-light);
+    color: black;
 }
 
 .light .submission {
     background-color: var(--blue-light);
+    color: black;
 }
 
 .light .aside {
     background-color: var(--blue-dark);
+    color: black;
 }
 
-.footer {
+.light .footer {
     background-color: var(--orange-light);
+    color: black;
 }
 
 /* light mode end */
 
 /* dark mode */
-body {
+body .dark {
     background-color: var(--grey-1);
     color: whitesmoke;
 }
@@ -66,24 +70,6 @@ body {
 }
 
 /* dark mode end */
-body {
-    line-height: 20px;
-}
-
-.header {
-    height: auto;
-    padding: 20px;
-    margin: 0 0 5px 0;
-    border-bottom: var(--borders);
-    text-align: end;
-}
-
-
-.header h1 {
-    text-align: center;
-    font-size: 35px;
-    font-weight: bolder;
-}
 
 /* setting up the two sections to be side by side */
 main {
@@ -100,11 +86,20 @@ main {
     padding: 15px;
 }
 
+.aside {
+    max-width: 40%;
+    padding: 40px;
+    border-right: var(--borders);
+    text-align: center;
+}
+
+/* blog input text minimum height */
 #blog {
     min-height: 200px;
 }
 
 /* message for correct or incorrect submissions */
+/* not working yet! */
 #msg {
     visibility: hidden;
     margin-top: 20px;
@@ -133,12 +128,7 @@ main {
 
 /* end for correct or incorrect submissions */
 
-.aside {
-    max-width: 40%;
-    padding: 40px;
-    border-right: var(--borders);
-    text-align: center;
-}
+
 
 img {
     filter: drop-shadow(-10px 15px 10px black);

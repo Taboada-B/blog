@@ -1,6 +1,8 @@
+// inserting text practice
+// const header =document.querySelector('.header')
 
 
-header.children[2].textContent = 'The DevDiary';
+
 
 
 // need to write if statement incase there are any form is blank
