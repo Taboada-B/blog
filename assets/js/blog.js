@@ -1,42 +1,5 @@
-const submit = document.querySelector('#submit')
-const userInput = document.querySelector('#user');
-const titleInput = document.querySelector('#title');
-const blogInput = document.querySelector('#blog');
-const blogLink = document.createElement('a');
-let msgDiv = document.querySelector('#msg');
 
-
-function displayMessage(type, message) {
-    msgDiv.textContent = message;
-    msgDiv.setAttribute('class', type);
-  }
-
-
-blogLink.href = 'blog.html';
-
-
-submit.addEventListener('click',function(event){
-event.preventDefault();
-const user = userInput.value;
-const title = titleInput.value;
-const blog = blogInput.value;
-
-if (user === '') {
-    displayMessage('.error', 'Username cannot be blank');    
-}
-else if (title === ''){
-    displayMessage('.error', 'Title cannot be blank');
-}
-else if (blog === ''){
-    displayMessage('.error', 'Blog cannot be blank');
-}
-else {
-    localStorage.setItem('user', user);
-    localStorage.setItem('title', title);
-    localStorage.setItem('blog', blog);
-    submit.link('./blog.html');
-}
-})
+// notes below
 
 
 // linking to next page

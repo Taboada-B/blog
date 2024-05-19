@@ -1,23 +1,7 @@
-const header = document.querySelector('.header');
-const themeSwitcher = document.querySelector('#theme-switcher')
-const container = document.querySelector('.container');
 
 
-// light dark mode switcher
-let mode = 'light';
-themeSwitcher.addEventListener('click', function () {
-    if (mode === 'light') {
-        mode = 'dark';
-        container.setAttribute('class', 'dark');
-    }
-    else {
-        mode = 'light';
-        container.setAttribute('class', 'light')
-    }
-});
-
-header.children[0].textContent = 'light/dark modes';
 header.children[2].textContent = 'The DevDiary';
+
 
 // need to write if statement incase there are any form is blank
 // example below
@@ -37,14 +21,6 @@ header.children[2].textContent = 'The DevDiary';
 
 
 // submit button to change the page
-
-
-
-
-
-
-
-
 
 // const submission = document.querySelector('.submission');
 
