@@ -13,35 +13,65 @@
 
 <body>
     <div class="container light">
-    <header class="header">
-        <input type="button" id="theme-switcher">
-        <p >light or dark mode coming soon</p>
-        <p><a href="./blog.html">the blog! </a></p>
-        <!-- <p><a href="./blog.html">the blog</a></p> -->
-        <h1></h1>
-    </header>
-    <main>
-        <aside class=aside>
-            <img src="./assets/img/PikPng.com_blog-icon.png" alt="typing on a computer">        </aside>
+        <header class="header">
+            <button id="theme-switcher"></button>
+            <p><a href="./blog.html">the blog! </a></p>
+            <!-- <p><a href="./blog.html">the blog</a></p> -->
+            <h1></h1>
+        </header>
+        <main>
+            <aside class=aside>
+                <img src="./assets/img/PikPng.com_blog-icon.png" alt="typing on a computer">
+            </aside>
 
-        <section class="submission">
-            
-            <p></p> 
-            <input type="click">
-            <p></p>
-            <input type="click">
-            <p></p>
-            <input type="click">
-                
-            <!-- button bellow -->
-            <p></p>
-        </section>
-    </main>
-    <footer class="footer">
-<p>made with love by Bryan Taboada</p>
-    </footer>
-    <script src="./assets/js/form.js"></script>
-</div>
+            <section class="submission">
+                <form method="POST">
+                    <div class="input-group">
+                        <label for="user">Username</label>
+                        <input type="text" name="user" id="user" placeholder="Jack Sparrow" />
+                    </div>
+                    <div class="input-group">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title" placeholder="Captain's log 42" />
+                      </div>
+                      <div class="input-group">
+                        <label for="content">Blog</label>
+                        <input type="text" name="email" id="email"/>
+                      </div>
+
+                    <!-- form , name element, form method a post, div for texbox, input type text, type submit, and value of submit-->
+
+        
+
+
+    
+        
+                </form>
+            </section>
+
+            <!-- <div class="clearfix">
+                <div class="card">
+                  <h2>Sign Up</h2>
+                  <form method="POST">
+                    <div class="input-group">
+                      <label for="email">Email</label>
+                      <input type="text" name="email" id="email" placeholder="janedoe@mail.com" />
+                    </div>
+                    <div class="input-group">
+                      <label for="password">Password</label>
+                      <input type="password" name="password" id="password" placeholder="supersecure123" />
+                    </div>
+                    <div id="msg"></div>
+                    <button id="sign-up">Sign Up</button>
+                  </form>
+                </div> -->
+
+        </main>
+        <footer class="footer">
+            <p>made with love by Bryan Taboada</p>
+        </footer>
+        <script src="./assets/js/form.js"></script>
+    </div>
 </body>
 
 </html>
