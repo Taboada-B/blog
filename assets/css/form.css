@@ -103,6 +103,10 @@ main {
 #blog {
   min-height: 200px;
 }
+#submit{
+    position: relative;
+    width: fit-content;
+}
 
 .aside {
     max-width: 40%;
