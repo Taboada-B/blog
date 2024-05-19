@@ -14,6 +14,7 @@ function displayMessage(type, message) {
 
 submit.addEventListener('click',function(event){
 event.preventDefault();
+
 const user = userInput.value;
 const title = titleInput.value;
 const blog = blogInput.value;
@@ -33,8 +34,11 @@ else {
     localStorage.setItem('blog', blog);
     blogLink.href = 'blog.html';
     document.getElementById('submit').appendChild(blogLink)
+    console.log(user)
+    
 }
 })
+console.log(localStorage.getItem(user))
 // end information and filtering
 
 // dark and light mode button

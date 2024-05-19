@@ -11,10 +11,9 @@ const header = document.querySelector('.header');
 const themeSwitcher = document.querySelector('#theme-switcher');
 const container = document.querySelector('.container');
 
+// light dark mode switcher
 header.children[0].textContent = 'light/dark modes';
 
-
-// light dark mode switcher
 let mode = 'light';
 themeSwitcher.addEventListener('click', function () {
     if (mode === 'light') {
@@ -27,9 +26,9 @@ themeSwitcher.addEventListener('click', function () {
     }
 });
 
-
 // end light dark mode button
-
+const section = document.querySelector('.blogSubmission');
+section.children[0].textContent = 'hello'
 
 
 

@@ -20,8 +20,8 @@
 
 
 /* light mode */
-.light body {
-    background-color: var(--orange-med);
+.light {
+    background-color:var(--orange-med);
     color: black;
 }
 
@@ -48,13 +48,13 @@
 /* light mode end */
 
 /* dark mode */
- .dark {
+ body .dark {
     background-color: var(--grey-1);
     color: whitesmoke;
 }
 
-.dark header {
-    background-color: var(--grey-2);
+.dark .header {
+    background-color:var(--grey-2);
     color: whitesmoke;
 }
 
@@ -63,7 +63,7 @@
     color: whitesmoke;
 }
 
-.dark .footer {
+.dark footer {
     background-color: var(--grey-3);
     color: whitesmoke;
 }
