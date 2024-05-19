@@ -31,3 +31,7 @@
   a{
     all:unset;
   }
+  
+  a:hover{
+cursor: pointer;
+  }

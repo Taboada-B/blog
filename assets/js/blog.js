@@ -1,9 +1,8 @@
-const submit = document.querySelector('#submit')
-const userInput = document.querySelector('#user');
-const titleInput = document.querySelector('#title');
-const blogInput = document.querySelector('#blog');
-const blogLink = document.createElement('a');
-let msgDiv = document.querySelector('#msg');
+// const submit = document.querySelector('#submit')
+// const userInput = document.querySelector('#user');
+// const titleInput = document.querySelector('#title');
+// const blogInput = document.querySelector('#blog');
+// let msgDiv = document.querySelector('#msg');
 
 
 // dark and light mode button
