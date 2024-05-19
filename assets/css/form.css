@@ -12,11 +12,13 @@
     --grey-2: #2d2d30;
     --grey-3: #808080;
 }
-#theme-switcher{
+
+#theme-switcher {
     text-align: right;
     max-width: fit-content;
     background-color: var(--orange-med);
 }
+
 /* light mode */
 body {
     background-color: var(--orange-med);
@@ -76,10 +78,6 @@ body {
     text-align: end;
 }
 
-a:hover {
-    text-decoration: underline;
-    font-weight: 900;
-}
 
 .header h1 {
     text-align: center;
@@ -87,6 +85,7 @@ a:hover {
     font-weight: bolder;
 }
 
+/* setting up the two sections to be side by side */
 main {
     flex-direction: row;
     justify-content: center;
@@ -94,6 +93,7 @@ main {
     border-bottom: var(--borders);
 }
 
+/* setting up submissions section to be stacked in columns */
 .submission {
     flex-direction: column;
     border-left: var(--borders);
@@ -101,12 +101,37 @@ main {
 }
 
 #blog {
-  min-height: 200px;
+    min-height: 200px;
 }
-#submit{
+
+/* message for correct or incorrect submissions */
+#msg {
+    visibility: hidden;
+    margin-top: 20px;
+    font-weight: 700;
+    height: 1.2em;
+    font-size: 1.2em;
+}
+
+#msg.success,
+#msg.error {
+    visibility: visible;
+}
+
+#msg.success {
+    color: #001b44;
+}
+
+#msg.error {
+    color: #e6252c;
+}
+
+#submit {
     position: relative;
     width: fit-content;
 }
+
+/* end for correct or incorrect submissions */
 
 .aside {
     max-width: 40%;
@@ -124,25 +149,21 @@ img {
     width: 100%;
     text-align: center;
     border-top: var(--borders);
-
-
 }
 
+
 @media screen and (max-width: 1000px) {
+
+    /* when screen gets smaller, the two sections stack in columns */
     main {
         flex-direction: column;
     }
 
+    .submission,
     .aside {
-        max-width: 90%;
-        margin: 5%;
-        border: var(--borders)
-    }
-
-    .submission {
         border: var(--borders);
         max-width: 90%;
-        margin: 0 5%;
+        margin: 2.5% 5%;
         background-color: var(--blue-dark);
     }
 }
