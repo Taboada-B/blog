@@ -1,5 +1,6 @@
 const header = document.querySelector('.header');
 const themeSwitcher = document.querySelector('#theme-switcher')
+const container = document.querySelector('.container');
 const submission = document.querySelector('.submission');
 
 
