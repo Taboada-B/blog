@@ -1,3 +1,17 @@
+:root {
+    /* light mode */
+    --blue-light: #56c1d8;
+    --blue-dark: #4e93b4;
+    --orange-light: #f9a159;
+    --orange-med: #cc7025;
+    --orange-dark: #9f561a;
+    --borders: solid black;
+    /* dark mode */
+    --grey-1: #3e3e42;
+    --grey-2: #2d2d30;
+    --grey-3: #808080;
+}
+
 * {
     color:black;
 }
@@ -7,8 +21,10 @@
     max-width: fit-content;
     background-color: var(--orange-med);
 }
+
+
 /* light mode */
-body {
+.light body {
     background-color: var(--orange-med);
     color: black;
 }
@@ -36,7 +52,7 @@ body {
 /* light mode end */
 
 /* dark mode */
-body {
+.dark body {
     background-color: var(--grey-1);
     color: whitesmoke;
 }

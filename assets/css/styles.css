@@ -35,3 +35,14 @@ a:hover {
     background-color: var(--orange-med);
 }
 
+.submission {
+    flex-direction: column;
+    border-left: var(--borders);
+    padding: 15px;
+}
+
+.footer {
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+}
