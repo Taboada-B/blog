@@ -20,25 +20,22 @@ const title = titleInput.value;
 const blog = blogInput.value;
 
 if (user === '') {
-    displayMessage('.error', 'Username cannot be blank');    
+    displayMessage('error', 'Username cannot be blank');    
 }
 else if (title === ''){
-    displayMessage('.error', 'Title cannot be blank');
+    displayMessage('error', 'Title cannot be blank');
 }
 else if (blog === ''){
-    displayMessage('.error', 'Blog cannot be blank');
+    displayMessage('error', 'Blog cannot be blank');
 }
 else {
     localStorage.setItem('user', user);
     localStorage.setItem('title', title);
     localStorage.setItem('blog', blog);
-    blogLink.href = 'blog.html';
-    document.getElementById('submit').appendChild(blogLink)
-    console.log(user)
-    
 }
 })
-console.log(localStorage.getItem(user))
+
+console.log(localStorage.getItem(userInput))
 // end information and filtering
 
 // dark and light mode button
