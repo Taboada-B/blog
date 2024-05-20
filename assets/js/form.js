@@ -3,7 +3,7 @@ const userInput = document.querySelector('#user');
 const titleInput = document.querySelector('#title');
 const blogInput = document.querySelector('#blog');
 const blogLink = document.createElement('a');
-let msgDiv = document.querySelector('#msg');
+const msgDiv = document.querySelector('#msg');
 
 // entering information and filtering
 function displayMessage(type, message) {
@@ -62,23 +62,6 @@ themeSwitcher.addEventListener('click', function () {
 
 
 // end light dark mode button
-
-
-// need to write if statement incase there are any form is blank
-// example below
-
-// if (email === '') {
-//     displayMessage('error', 'Email cannot be blank');
-//   } else if (password === '') {
-//     displayMessage('error', 'Password cannot be blank');
-//   } else {
-//     displayMessage('success', 'Registered successfully');
-
-//     localStorage.setItem('email', email);
-//     localStorage.setItem('password', password);
-//     renderLastRegistered();
-//   }
-// });
 
 
 // submit button to change the page
