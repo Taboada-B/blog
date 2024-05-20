@@ -5,6 +5,11 @@ const blogInput = document.querySelector('#blog');
 const blogLink = document.createElement('a');
 const msgDiv = document.querySelector('#msg');
 
+// testing to bring up info into spans
+const userSpan = document.querySelector('#userSpan');
+const userTitleSpan = document.querySelector('#userTitleSpan');
+const userBlogSpan = document.querySelector('#userBlogSpan');
+
 // entering information and filtering
 function displayMessage(type, message) {
     msgDiv.textContent = message;
@@ -32,10 +37,27 @@ else {
     localStorage.setItem('user', user);
     localStorage.setItem('title', title);
     localStorage.setItem('blog', blog);
+renderBlogContent()
 }
 })
 
-console.log(localStorage.getItem(userInput))
+function renderBlogContent() {
+    const user = localStorage.getItem('user');
+    const title = localStorage.getItem('title');
+    const blog = localStorage.getItem('blog');
+  
+    if (!user || !title || !blog) {
+      return;
+    }
+  
+    userSpan.textContent = user;
+    console.log('first userSpan')
+    console.log(userSpan)
+    userTitleSpan.textContent = title;
+    userBlogSpan.textContent = blog;
+  }
+console.log('bellow is username hopefully')
+console.log(userSpan)
 // end information and filtering
 
 // dark and light mode button

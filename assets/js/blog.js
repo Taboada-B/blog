@@ -31,7 +31,8 @@ const section = document.querySelector('.blogSubmission');
 section.children[0].textContent = 'hello'
 
 
-
+console.log('its me')
+console.log(submit)
 
 
 
