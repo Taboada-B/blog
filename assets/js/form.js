@@ -56,9 +56,8 @@ function renderBlogContent() {
     userTitleSpan.textContent = title;
     userBlogSpan.textContent = blog;
   }
-console.log('bellow is username hopefully')
-console.log(userSpan)
-// end information and filtering
+
+// end information and filtering and populating 
 
 // dark and light mode button
 

@@ -28,11 +28,10 @@ themeSwitcher.addEventListener('click', function () {
 
 // end light dark mode button
 const section = document.querySelector('.blogSubmission');
-section.children[0].textContent = 'hello'
+// section.children[0].textContent = '';
 
 
-console.log('its me')
-console.log(submit)
+
 
 
 
