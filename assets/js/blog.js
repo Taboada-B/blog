@@ -22,14 +22,53 @@ themeSwitcher.addEventListener('click', function () {
 // end light dark mode button
 
 // making variables from windows localstorage
-const userName = localStorage.getItem('user-name');
-const titleName = localStorage.getItem('title-name');
-const blogContent = localStorage.getItem('blog-content');
+// const userName = localStorage.getItem('user-name');
+// const titleName = localStorage.getItem('title-name');
+// const blogContent = localStorage.getItem('blog-content');
 
 //populating the page 
-document.querySelector('#blog-user').textContent = userName;
-document.querySelector('#title-name').textContent = titleName;
-document.querySelector('#blog-content').textContent = blogContent;
+function addUserElement(){
+    const userName = localStorage.getItem('user-name');
+    // creates a new div
+    const newDiv = document.createElement("div");
+// giving div content
+newDiv.textContent = userName;
+
+const targetDiv = document.getElementById('div1');
+
+targetDiv.appendChild(newDiv);
+}
+function addTitleElement(){
+    const userTitle = localStorage.getItem('title-name');
+    // creates a new div
+    const newDiv = document.createElement("div");
+// giving div content
+newDiv.textContent = userTitle;
+
+const targetDiv = document.getElementById('div1');
+targetDiv.appendChild(newDiv);
+}
+
+function addBlogElement(){
+    const userBlog = localStorage.getItem('blog-content');
+    // creates a new div
+    const newDiv = document.createElement("div");
+// giving div content
+newDiv.textContent = userBlog;
+
+const targetDiv = document.getElementById('div1');
+
+targetDiv.appendChild(newDiv);
+}
+
+
+addUserElement();
+addTitleElement();
+addBlogElement();
+
+// document.querySelector('#blog-user').textContent = userName;
+// document.querySelector('#title-name').textContent = titleName;
+// document.querySelector('#blog-content').textContent = blogContent;
 
 
 // section.children[0].textContent = '';
