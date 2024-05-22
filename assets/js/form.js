@@ -1,14 +1,7 @@
-const submit = document.querySelector('#submit')
-const userInput = document.querySelector('#user');
-const titleInput = document.querySelector('#title');
-const blogInput = document.querySelector('#blog');
 const blogLink = document.createElement('a');
 const msgDiv = document.querySelector('#msg');
-
+const form = document.getElementById('form');
 // testing to bring up info into spans
-const userSpan = document.querySelector('#userSpan');
-const userTitleSpan = document.querySelector('#userTitleSpan');
-const userBlogSpan = document.querySelector('#userBlogSpan');
 
 // entering information and filtering
 function displayMessage(type, message) {
@@ -16,6 +9,10 @@ function displayMessage(type, message) {
     msgDiv.setAttribute('class', type);
   }
 
+const userInput = document.querySelector('#user');
+const titleInput = document.querySelector('#title');
+const blogInput = document.querySelector('#blog');
+const submit = document.querySelector('#submit')
 
 submit.addEventListener('click',function(event){
 event.preventDefault();
@@ -34,28 +31,31 @@ else if (blog === ''){
     displayMessage('error', 'Blog cannot be blank');
 }
 else {
-    localStorage.setItem('user', user);
-    localStorage.setItem('title', title);
-    localStorage.setItem('blog', blog);
-renderBlogContent()
+    //stores data to browser
+    window.localStorage.setItem('user-name', user);
+    window.localStorage.setItem('title-name', title);
+    window.localStorage.setItem('blog-content', blog);
+//go to next page
+window.location.href = "blog.html";
+
 }
 })
 
-function renderBlogContent() {
-    const user = localStorage.getItem('user');
-    const title = localStorage.getItem('title');
-    const blog = localStorage.getItem('blog');
+// function renderBlogContent() {
+//     const user = localStorage.getItem('user');
+//     const title = localStorage.getItem('title');
+//     const blog = localStorage.getItem('blog');
   
-    if (!user || !title || !blog) {
-      return;
-    }
+//     if (!user || !title || !blog) {
+//       return;
+//     }
   
-    userSpan.textContent = user;
-    console.log('first userSpan')
-    console.log(userSpan)
-    userTitleSpan.textContent = title;
-    userBlogSpan.textContent = blog;
-  }
+//     userSpan.textContent = user;
+//     console.log('first userSpan')
+//     console.log(userSpan)
+//     userTitleSpan.textContent = title;
+//     userBlogSpan.textContent = blog;
+//   }
 
 // end information and filtering and populating 
 

@@ -1,10 +1,3 @@
-// const submit = document.querySelector('#submit')
-// const userInput = document.querySelector('#user');
-// const titleInput = document.querySelector('#title');
-// const blogInput = document.querySelector('#blog');
-// let msgDiv = document.querySelector('#msg');
-
-
 // dark and light mode button
 
 const header = document.querySelector('.header');
@@ -27,14 +20,44 @@ themeSwitcher.addEventListener('click', function () {
 });
 
 // end light dark mode button
-const section = document.querySelector('.blogSubmission');
+
+// making variables from windows localstorage
+const userName = localStorage.getItem('user-name');
+const titleName = localStorage.getItem('title-name');
+const blogContent = localStorage.getItem('blog-content');
+
+//populating the page 
+document.querySelector('#blog-user').textContent = userName;
+document.querySelector('#title-name').textContent = titleName;
+document.querySelector('#blog-content').textContent = blogContent;
+
+
 // section.children[0].textContent = '';
 
 
 
+// bellow is rendering things not yet
+
+// function renderBlogContent() {
+//     const user = localStorage.getItem('user');
+//     const title = localStorage.getItem('title');
+//     const blog = localStorage.getItem('blog');
+  
+//     if (!user || !title || !blog) {
+//       return;
+//     }
+  
+//     userSpan.textContent = user;
+//     console.log('first userSpan')
+//     console.log(userSpan)
+//     userTitleSpan.textContent = title;
+//     userBlogSpan.textContent = blog;
+//   }
 
 
-
+// const userSpan = document.querySelector('#userSpan');
+// const userTitleSpan = document.querySelector('#userTitleSpan');
+// const userBlogSpan = document.querySelector('#userBlogSpan');
 
 
 
