@@ -30,7 +30,7 @@
     color: black;
 }
 
-.light .submission {
+.light div {
     background-color: var(--blue-light);
     color: black;
 }
@@ -80,6 +80,9 @@ body .dark {
 
 #blogSubmission {
     margin: 15px;
-    padding: 10px ;
+    padding: 0 ;
     border: solid black;
+}
+.footer{
+    border-top:var(--borders);
 }
