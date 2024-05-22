@@ -9,32 +9,32 @@ const submit = document.querySelector('#submit')
 function displayMessage(type, message) {
     msgDiv.textContent = message;
     msgDiv.setAttribute('class', type);
-  }
+}
 // hitting submit triggers these events
-submit.addEventListener('click',function(event){
-event.preventDefault();
+submit.addEventListener('click', function (event) {
+    event.preventDefault();
 
-const user = userInput.value;
-const title = titleInput.value;
-const blog = blogInput.value;
-// if anything is blank, return an error
-if (user === '') {
-    displayMessage('error', 'Username cannot be blank');    
-}
-else if (title === ''){
-    displayMessage('error', 'Title cannot be blank');
-}
-else if (blog === ''){
-    displayMessage('error', 'Blog cannot be blank');
-}
-else {
-    //stores data to browser under these keys
-    window.localStorage.setItem('user-name', user);
-    window.localStorage.setItem('title-name', title);
-    window.localStorage.setItem('blog-content', blog);
-//go to next page after hitting submit
-window.location.href = "blog.html";
-}
+    const user = userInput.value;
+    const title = titleInput.value;
+    const blog = blogInput.value;
+    // if anything is blank, return an error
+    if (user === '') {
+        displayMessage('error', 'Username cannot be blank');
+    }
+    else if (title === '') {
+        displayMessage('error', 'Title cannot be blank');
+    }
+    else if (blog === '') {
+        displayMessage('error', 'Blog cannot be blank');
+    }
+    else {
+        //stores data to browser under these keys
+        window.localStorage.setItem('user-name', user);
+        window.localStorage.setItem('title-name', title);
+        window.localStorage.setItem('blog-content', blog);
+        //go to next page after hitting submit
+        window.location.href = "blog.html";
+    }
 })
 
 // end information and filtering

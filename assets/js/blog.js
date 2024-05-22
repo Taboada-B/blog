@@ -22,34 +22,36 @@ themeSwitcher.addEventListener('click', function () {
 
 //populating the page 
 
-function addUserElement(){
+function addUserElement() {
     const userName = localStorage.getItem('user-name');
     // creates a new div
     const newDiv = document.createElement("div");
-// giving div content
-newDiv.textContent = userName;
-const targetDiv = document.getElementById('div1');
-targetDiv.appendChild(newDiv);
+    // giving div content
+    newDiv.textContent = userName;
+// 
+    const targetDiv = document.getElementById('div1');
+    
+    targetDiv.appendChild(newDiv);
 }
 
-function addTitleElement(){
+function addTitleElement() {
     const userTitle = localStorage.getItem('title-name');
     // creates a new div
     const newDiv = document.createElement("div");
-// giving div content
-newDiv.textContent = userTitle;
-const targetDiv = document.getElementById('div1');
-targetDiv.appendChild(newDiv);
+    // giving div content
+   newDiv.textContent = userTitle; 
+    const targetDiv = document.getElementById('div1');
+    targetDiv.appendChild(newDiv);
 }
 
-function addBlogElement(){
+function addBlogElement() {
     const userBlog = localStorage.getItem('blog-content');
     // creates a new div
     const newDiv = document.createElement("div");
-// giving div content
-newDiv.textContent = userBlog;
-const targetDiv = document.getElementById('div1');
-targetDiv.appendChild(newDiv);
+    // giving div content
+    newDiv.textContent = userBlog;
+    const targetDiv = document.getElementById('div1');
+    targetDiv.appendChild(newDiv);
 }
 
 // calling the functions

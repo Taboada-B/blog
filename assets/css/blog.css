@@ -21,7 +21,7 @@
 
 /* light mode */
 .light {
-    background-color:var(--orange-med);
+    background-color: var(--orange-med);
     color: black;
 }
 
@@ -48,13 +48,13 @@
 /* light mode end */
 
 /* dark mode */
- body .dark {
+body .dark {
     background-color: var(--grey-1);
     color: whitesmoke;
 }
 
 .dark .header {
-    background-color:var(--grey-2);
+    background-color: var(--grey-2);
     color: whitesmoke;
 }
 
@@ -69,3 +69,17 @@
 }
 
 /* dark mode end */
+#main {
+    flex-direction: column;
+    margin: 15px;
+}
+
+#main h1{
+    text-align: center;
+}
+
+#blogSubmission {
+    margin: 15px;
+    padding: 10px ;
+    border: solid black;
+}
