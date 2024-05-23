@@ -31,25 +31,29 @@ console.log(userData.length);
  function addElements() {
    for (let i = 0; i < userData.length; i++) {
     // creates a new div
-    const newDiv = document.createElement("div");
+    const newDivUser = document.createElement("div");
     // giving div content
-    newDiv.textContent = userData[i].user;
-    let targetDivUser = document.getElementById('div1');
-    targetDivUser.appendChild(newDiv);
+    newDivUser.textContent = userData[i].user;
+    let targetDivUser = document.getElementById('divUser');
+    targetDivUser.appendChild(newDivUser);
 
-    // newDiv.textContent = userData[i].title;
-    // let targetDivTitle = document.getElementById('div1');
-    // targetDivTitle.appendChild(newDiv);
+    const newDivTitle = document.createElement("div");
+    // giving div content
+    newDivTitle.textContent = userData[i].title;
+    let targetDivTitle = document.getElementById('divTitle');
+    targetDivTitle.appendChild(newDivTitle);
 
-    // newDiv.textContent = userData[i].blog;
-    // let targetDivBlog = document.getElementById('div1');
-    // targetDivBlog.appendChild(newDiv);
+    const newDivBlog = document.createElement("div");
+    // giving div content
+    newDivBlog.textContent = userData[i].blog;
+    let targetDivBlog = document.getElementById('divBlog');
+    targetDivBlog.appendChild(newDivBlog);
    }
     
 }
 addElements()
  // back button
- 
+
 
 
 
