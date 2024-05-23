@@ -12,33 +12,35 @@ function displayMessage(type, message) {
 }
 
 // hitting submit triggers these events
-let userData = {}
+let data = {};
+let userData = [];
 submit.addEventListener('click', function (event) {
     event.preventDefault();
-        userData = {
+    let data = {
         user: userInput.value.trim(),
         title: titleInput.value.trim(),
         blog: blogInput.value.trim(),
-    }
+    };
     // original that worked below 3 lines
     // const user = userInput.value;
     // const title = titleInput.value;
     // const blog = blogInput.value;
     // if anything is blank, return an error
-    if (userData.user === '') { // was user === ''
+    if (data.user === '') { // was user === ''
         displayMessage('error', 'Username cannot be blank');
     }
-    else if (userData.title === '') { // was title === ''
+    else if (data.title === '') { // was title === ''
         displayMessage('error', 'Title cannot be blank');
     }
-    else if (userData.blog === '') { // was blog === ''
+    else if (data.blog === '') { // was blog === ''
         displayMessage('error', 'Blog cannot be blank');
     }
     else {
+        userData.push(data)
+console.log(userData)
         //stores data to browser under these keys
-window.localStorage.setItem('userData', JSON.stringify(userData))
-console.log(userData);
-console.log(userData.user); 
+        window.localStorage.setItem('userData', JSON.stringify(userData))
+
         // window.localStorage.setItem('user-name', user);
         // window.localStorage.setItem('title-name', title);
         // window.localStorage.setItem('blog-content', blog);
@@ -69,7 +71,7 @@ console.log(userData.user);
 //       lastGrade.student + ` received a/an ${lastGrade.grade}`;
 
 
-  // create user object from submission
+// create user object from submission
 //   const user = {
 //     firstName: firstNameInput.value.trim(),
 //     lastName: lastNameInput.value.trim(),
