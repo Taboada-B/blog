@@ -20,7 +20,9 @@ function displayMessage(type, message) {
 }
 
 // hitting submit triggers these events
+
 let data = {};
+// making an array
 let userData = [];
 submit.addEventListener('click', function (event) {
     event.preventDefault();
@@ -29,25 +31,22 @@ submit.addEventListener('click', function (event) {
         title: titleInput.value.trim(),
         blog: blogInput.value.trim(),
     };
-    // original that worked below 3 lines
-    // const user = userInput.value;
-    // const title = titleInput.value;
-    // const blog = blogInput.value;
+
     // if anything is blank, return an error
-    if (data.user === '') { // was user === ''
+    if (data.user === '') { // 
         displayMessage('error', 'Username cannot be blank');
     }
-    else if (data.title === '') { // was title === ''
+    else if (data.title === '') { 
         displayMessage('error', 'Title cannot be blank');
     }
-    else if (data.blog === '') { // was blog === ''
+    else if (data.blog === '') { 
         displayMessage('error', 'Blog cannot be blank');
     }
     else {
-        userData.push(data)
-        console.log(userData)
+        userData.push(data);
+        console.log(userData);
         //stores data to browser under these keys
-        window.localStorage.setItem('userData', JSON.stringify(userData))
+        window.localStorage.setItem('userData', JSON.stringify(userData));
         // //go to next page after hitting submit
         window.location.href = "blog.html";
     }
