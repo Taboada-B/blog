@@ -5,6 +5,8 @@ const container = document.querySelector('.container');
 
 const toFormBtn = document.querySelector('#toFormBtn');
 toFormBtn.textContent = 'Home Page';
+
+
 toFormBtn.addEventListener('click', function(event){
     event.preventDefault();
     window.location.href = "index.html";

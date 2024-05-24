@@ -12,6 +12,10 @@
     --grey-3: #808080;
 }
 
+#toFormBtn:hover{
+    text-decoration: underline;
+}
+
 #theme-switcher {
     text-align: right;
     max-width: fit-content;
