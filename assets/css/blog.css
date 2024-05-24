@@ -83,6 +83,7 @@ body .dark {
     padding: 0 ;
     border: solid black;
 }
+
 .footer{
     border-top:var(--borders);
 }
