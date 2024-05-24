@@ -79,12 +79,13 @@ body .dark {
 }
 
 .blogSubmission {
-    margin: 15px;
+    margin: 15px 5%;
     padding: 0 ;
     border-top: solid black;
     border-left: solid black;
     border-right: solid black;
-
+    max-width: 90%;
+    display: flex;
 }
 
 .blogSubmission h2{
