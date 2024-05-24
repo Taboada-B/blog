@@ -78,7 +78,7 @@ body .dark {
     text-align: center;
 }
 
-#blogSubmission {
+.blogSubmission {
     margin: 15px;
     padding: 0 ;
     border: solid black;

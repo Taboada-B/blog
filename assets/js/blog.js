@@ -29,8 +29,7 @@ themeSwitcher.addEventListener('click', function () {
 
 
 //populating the page 
-let data = localStorage.getItem('userData');
-let userData = JSON.parse(data);
+let userData = JSON.parse(localStorage.getItem('userData'));
 
  function addElements() {
    for (let i = 0; i < userData.length; i++) {

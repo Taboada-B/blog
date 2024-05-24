@@ -20,8 +20,6 @@ function displayMessage(type, message) {
 }
 let userData = JSON.parse(window.localStorage.getItem('userData')) || [];
 
-// let userData = [];
-
 // hitting submit triggers these events
 submit.addEventListener('click', function (event) {
     event.preventDefault();
