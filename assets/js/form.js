@@ -5,6 +5,14 @@ const titleInput = document.querySelector('#title');
 const blogInput = document.querySelector('#blog');
 const submit = document.querySelector('#submit')
 
+// inserting button to navigate between pages. 
+const toBlogBtn = document.querySelector('#toBlogBtn');
+toBlogBtn.textContent = 'The Blog';
+toBlogBtn.addEventListener('click', function(event){
+    event.preventDefault();
+    window.location.href = "blog.html";
+});
+
 // entering information and filtering
 function displayMessage(type, message) {
     msgDiv.textContent = message;
