@@ -18,20 +18,19 @@ function displayMessage(type, message) {
     msgDiv.textContent = message;
     msgDiv.setAttribute('class', type);
 }
+let userData = JSON.parse(window.localStorage.getItem('userData')) || [];
+
+// let userData = [];
 
 // hitting submit triggers these events
-
-let data = {};
-// making an array
-let userData = [];
 submit.addEventListener('click', function (event) {
     event.preventDefault();
-    let data = {
+        let data = {
         user: userInput.value.trim(),
         title: titleInput.value.trim(),
         blog: blogInput.value.trim(),
-    };
-
+        };            
+   
     // if anything is blank, return an error
     if (data.user === '') { // 
         displayMessage('error', 'Username cannot be blank');
@@ -50,7 +49,7 @@ submit.addEventListener('click', function (event) {
         // //go to next page after hitting submit
         window.location.href = "blog.html";
     }
-})
+});
 
 // end information and filtering
 
