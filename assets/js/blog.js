@@ -35,19 +35,19 @@ console.log(userData);
  function addElements() {
    for (let i = 0; i < userData.length; i++) {
     // creates a new div
-    const newDivUser = document.createElement("div");
+    const newDivUser = document.createElement("h2");
     // giving div content
     newDivUser.textContent = userData[i].user;
     let targetDivUser = document.getElementById('divData');
     targetDivUser.appendChild(newDivUser);
 
-    const newDivTitle = document.createElement("div");
+    const newDivTitle = document.createElement("h3");
     // giving div content
     newDivTitle.textContent = userData[i].title;
     let targetDivTitle = document.getElementById('divData');
     targetDivTitle.appendChild(newDivTitle);
 
-    const newDivBlog = document.createElement("div");
+    const newDivBlog = document.createElement("p");
     // giving div content
     newDivBlog.textContent = userData[i].blog;
     let targetDivBlog = document.getElementById('divData');

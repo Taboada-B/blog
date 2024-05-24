@@ -81,7 +81,25 @@ body .dark {
 .blogSubmission {
     margin: 15px;
     padding: 0 ;
-    border: solid black;
+    border-top: solid black;
+    border-left: solid black;
+    border-right: solid black;
+
+}
+
+.blogSubmission h2{
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: underline;
+    line-height: 35px;
+}
+
+.blogSubmission h3 {
+    font-style: italic ;
+}
+
+.blogSubmission p {
+    border-bottom: solid black;
 }
 
 .footer{
